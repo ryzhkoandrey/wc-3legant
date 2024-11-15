@@ -29,5 +29,29 @@
         color: #141718;
     }
 
-    &__btns {}
+    &__btns {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    &__btn-count {
+        min-width: 20px;
+        height: 20px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 0.83333;
+        color: var(--yellow);
+        background: #141718;
+        border-radius: 100%;
+    }
 }
