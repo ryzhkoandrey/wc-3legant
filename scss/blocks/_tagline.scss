@@ -1,0 +1,21 @@
+.tagline {
+    padding: 8px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: #141718;
+
+    &__icon {}
+
+    &__desc {
+        font-family: var(--font-main);
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.57143;
+        text-align: center;
+        color: #fff;
+    }
+
+    &__link {}
+}
