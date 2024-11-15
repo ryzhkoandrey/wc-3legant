@@ -1,6 +1,10 @@
 .hero {
     height: 820px;
-    background: #FFC95C url('../img/hero/bg.jpg') no-repeat center top / cover;
+    background: #FFC95C url('../img/hero/bg.jpg') no-repeat center / cover;
+
+    @include mediaBg() {
+        background-image: url('../img/hero/bg@2x.jpg');
+    }
 
     &__container {
         height: 100%;
@@ -11,4 +15,28 @@
     }
 
     &__content {}
+
+    &__title {
+        margin-bottom: 8px;
+        font-family: var(--font-accent);
+        font-weight: 500;
+        font-size: 80px;
+        line-height: 1.05;
+        letter-spacing: -0.04em;
+        color: #121212;
+
+        span {
+            color: #377dff;
+        }
+    }
+
+    &__desc {
+        margin-bottom: 28px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #121212;
+    }
+
+    &__link {}
 }
