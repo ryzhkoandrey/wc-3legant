@@ -8,16 +8,26 @@
         align-items: center;
     }
 
-    &__logo {
-        font-family: "Poppins", sans-serif;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 1;
-        text-align: center;
-        color: #000;
+    &__logo {}
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 40px;
     }
 
-    &__list {}
+    &__item {}
+
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        font-family: var(--font-nav);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.71429;
+        color: #141718;
+    }
 
     &__btns {}
 }
