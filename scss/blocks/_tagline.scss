@@ -28,6 +28,18 @@
         line-height: 1.57143;
         color: var(--tagline-link);
         border-bottom: 1px solid var(--tagline-link);
+
+        &:hover {
+
+            img {
+                transform: rotate(180deg);
+            }
+        }
+
+        img {
+            transition: all .2s;
+            transform-origin: center;
+        }
     }
 
     &__close {
