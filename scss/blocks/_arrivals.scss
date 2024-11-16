@@ -12,4 +12,9 @@
     &__title {}
 
     &__dots {}
+
+    &__slider {
+        display: flex;
+        gap: 24px;
+    }
 }
