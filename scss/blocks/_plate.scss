@@ -1,7 +1,31 @@
 .plate {
     position: relative;
     height: 319px;
-    background: #f3f5f7;
+    background: #f3f5f7 no-repeat center / cover;
+
+    &--01 {
+        background-image: url('../img/collections/01.jpg');
+
+        @include mediaBg() {
+            background-image: url('../img/collections/01@2x.jpg');
+        }
+    }
+
+    &--02 {
+        background-image: url('../img/collections/02.jpg');
+
+        @include mediaBg() {
+            background-image: url('../img/collections/02@2x.jpg');
+        }
+    }
+
+    &--03 {
+        background-image: url('../img/collections/03.jpg');
+
+        @include mediaBg() {
+            background-image: url('../img/collections/03@2x.jpg');
+        }
+    }
 
     &--tall {
         grid-row: 1 / 3;
