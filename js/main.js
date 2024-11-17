@@ -15,7 +15,7 @@ const swiper = new Swiper('.swiper', {
     spaceBetween: 24,
     freeMode: true,
     pagination: {
-        el: '.dots',
+        el: '.swiper-pagination',
         clickable: true,
     },
 });
