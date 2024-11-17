@@ -9,7 +9,6 @@ closeTaglineBtn.onclick = function () {
 
 // ---------- ARRIVALS: SWIPER ----------
 
-
 const swiper = new Swiper('.swiper', {
     slidesPerView: 'auto',
     spaceBetween: 24,
