@@ -1,0 +1,54 @@
+.plate {
+    position: relative;
+    height: 319px;
+    background: #f3f5f7;
+
+    &--tall {
+        grid-row: span 2;
+        height: 664px;
+    }
+
+    &__content {
+        position: absolute;
+        right: 32px;
+        bottom: 40px;
+        left: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 12px;
+    }
+
+    &__title {
+        font-family: var(--font-accent);
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.11765;
+        letter-spacing: -0.02em;
+        color: #121212;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.75;
+        letter-spacing: -0.03em;
+        color: #121212;
+        border-bottom: 1px solid #121212;
+
+        &:hover {
+
+            img {
+                transform: rotate(360deg);
+            }
+        }
+
+        img {
+            transition: all .2s;
+            transform-origin: center;
+        }
+    }
+}
