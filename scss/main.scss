@@ -5,11 +5,12 @@
 @import 'global/vars';
 @import 'global/base';
 
-// blocks
+// libs
 
-@import 'blocks/none';
-@import 'blocks/no-scroll';
-@import 'blocks/visually-hidden';
+@import '../libs/swiper/swiper-bundle.min.css';
+@import '../libs/swiper/swiper-bundle-override';
+
+// blocks
 
 @import 'blocks/container';
 @import 'blocks/container-right';
@@ -25,3 +26,7 @@
 @import 'blocks/hero';
 @import 'blocks/arrivals';
 @import 'blocks/footer';
+
+@import 'blocks/none';
+@import 'blocks/no-scroll';
+@import 'blocks/visually-hidden';
