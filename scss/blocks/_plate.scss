@@ -4,7 +4,7 @@
     background: #f3f5f7;
 
     &--tall {
-        grid-row: span 2;
+        grid-row: 1 / 3;
         height: 664px;
     }
 
@@ -48,7 +48,6 @@
 
         img {
             transition: all .2s;
-            transform-origin: center;
         }
     }
 }
