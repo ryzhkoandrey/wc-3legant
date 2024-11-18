@@ -12,6 +12,9 @@
 
 // blocks
 
+@import 'blocks/none';
+@import 'blocks/no-scroll';
+@import 'blocks/visually-hidden';
 @import 'blocks/container';
 @import 'blocks/container-right';
 @import 'blocks/btn';
@@ -26,8 +29,5 @@
 @import 'blocks/hero';
 @import 'blocks/arrivals';
 @import 'blocks/collection';
+@import 'blocks/bestseller';
 @import 'blocks/footer';
-
-@import 'blocks/none';
-@import 'blocks/no-scroll';
-@import 'blocks/visually-hidden';
