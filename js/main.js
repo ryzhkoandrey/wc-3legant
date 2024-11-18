@@ -7,7 +7,7 @@ closeTaglineBtn.onclick = function () {
     tagline.remove();
 };
 
-// ---------- ARRIVALS: SWIPER ----------
+// ---------- ARRIVALS > SWIPER ----------
 
 const swiper = new Swiper('.swiper', {
     slidesPerView: 'auto',
@@ -18,3 +18,5 @@ const swiper = new Swiper('.swiper', {
         clickable: true,
     },
 });
+
+// ---------- PROMOTION > TIMER ----------
