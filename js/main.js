@@ -21,7 +21,10 @@ const swiper = new Swiper('.swiper', {
 
 // ---------- PROMOTION > TIMER ----------
 
-const endDate = new Date('Nov 22, 2024, 12:00:00');
+// const endDate = new Date('Nov 22, 2024, 12:00:00');
+
+const endDate = new Date();
+endDate.setDate(endDate.getDate() + 3);
 
 const daysElement = document.querySelector('#days');
 const hoursElement = document.querySelector('#hours');
@@ -36,6 +39,12 @@ function updateTimer() {
     const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+    daysElement.innerText = days;
+    hoursElement.innerText = hours;
+    minutesElement.innerText = minutes;
+    secondsElement.innerText = seconds;
 };
 
 updateTimer();
+setInterval(updateTimer, 1000);
