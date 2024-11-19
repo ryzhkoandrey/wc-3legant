@@ -1,0 +1,33 @@
+.form-newsletter {
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid rgba(108, 114, 117, 0.5);
+
+    &__input {
+        flex-grow: 1;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.75;
+        letter-spacing: -0.03em;
+        color: #121212;
+
+        &::placeholder {
+            color: #6c7275;
+        }
+    }
+
+    &__submit {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.75;
+        letter-spacing: -0.03em;
+        color: #6c7275;
+        transition: color .2s;
+
+        &:hover {
+            color: #121212;
+        }
+    }
+}
