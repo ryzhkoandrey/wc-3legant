@@ -1,0 +1,12 @@
+.newsletter {
+    height: 360px;
+    background: #e2e4e3 url("../img/newsletter/bg.jpg") no-repeat center bottom;
+
+    @include mediaBg() {
+        background-image: url('../img/newsletter/bg@2x.jpg');
+    }
+
+    &__content {}
+
+    &__title {}
+}
