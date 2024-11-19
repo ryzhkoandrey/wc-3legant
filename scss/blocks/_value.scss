@@ -1,0 +1,24 @@
+.value {
+    padding: 48px 32px;
+    background: #f3f5f7;
+
+    &__img {
+        margin-bottom: 16px;
+    }
+
+    &__title {
+        margin-bottom: 8px;
+        font-family: var(--font-accent);
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.4;
+        color: #141718;
+    }
+
+    &__desc {
+        font-family: var(--font-accent);
+        font-size: 14px;
+        line-height: 1.71429;
+        color: #6c7275;
+    }
+}
