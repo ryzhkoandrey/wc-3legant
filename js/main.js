@@ -51,10 +51,10 @@ function updateTimer() {
     const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
-    daysElement.innerText = days;
-    hoursElement.innerText = hours;
-    minutesElement.innerText = minutes;
-    secondsElement.innerText = seconds;
+    daysElement.innerText = days.toString().padStart(2, '0');
+    hoursElement.innerText = hours.toString().padStart(2, '0');
+    minutesElement.innerText = minutes.toString().padStart(2, '0');
+    secondsElement.innerText = seconds.toString().padStart(2, '0');
 };
 
 updateTimer();
