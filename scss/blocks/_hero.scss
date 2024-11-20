@@ -6,6 +6,10 @@
         background-image: url('../img/hero/bg@2x.jpg');
     }
 
+    @include tablet {
+        height: 500px;
+    }
+
     &__container {
         height: 100%;
         display: flex;
@@ -24,6 +28,11 @@
         line-height: 1.05;
         letter-spacing: -0.04em;
         color: #121212;
+        text-wrap: balance;
+
+        @include tablet {
+            font-size: 60px;
+        }
 
         span {
             color: #377dff;
