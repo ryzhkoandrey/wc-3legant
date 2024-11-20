@@ -1,3 +1,29 @@
 .footer {
     margin-top: auto;
+    background: #141718;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+    }
+
+    &__row--top {}
+
+    &__row--border {}
+
+    &__title {}
+
+    &__logo {}
+
+    &__separator {}
+
+    &__store {}
+
+    &__nav {}
+
+    &__copyrights {}
+
+    &__socials {}
 }
