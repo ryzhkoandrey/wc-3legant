@@ -4,11 +4,5 @@ html {
 
 body {
     font-family: var(--font-main);
-}
-
-html,
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    text-wrap: balance;
 }

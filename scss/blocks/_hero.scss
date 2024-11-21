@@ -16,6 +16,10 @@
         align-items: center;
         padding-left: calc((100% - var(--container-width)) / 2 + (var(--container-width) / 2));
         padding-right: calc((100% - var(--container-width)) / 2);
+
+        @include tablet {
+            padding-right: var(--container-padding);
+        }
     }
 
     &__content {}
@@ -28,7 +32,6 @@
         line-height: 1.05;
         letter-spacing: -0.04em;
         color: #121212;
-        text-wrap: balance;
 
         @include tablet {
             font-size: 60px;

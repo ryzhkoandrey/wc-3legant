@@ -20,12 +20,20 @@
     &__container {
         padding-left: calc((100% - var(--container-width)) / 2 + (var(--container-width) / 2));
         padding-right: calc((100% - var(--container-width)) / 2);
+
+        @include tablet {
+            padding-right: var(--container-padding);
+        }
     }
 
     &__content {
         padding: 100px 0 100px 72px;
         display: grid;
         gap: 24px;
+
+        @include tablet {
+            padding: 50px 0 50px var(--container-padding);
+        }
     }
 
     &__desc {
