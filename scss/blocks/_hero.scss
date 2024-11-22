@@ -20,6 +20,15 @@
         @include tablet {
             padding-right: var(--container-padding);
         }
+
+        @include mobile {
+            margin: 0 auto;
+            padding: 40px var(--container-padding);
+            max-width: 375px;
+            height: auto;
+            justify-content: center;
+            text-align: center;
+        }
     }
 
     &__content {}
@@ -37,6 +46,10 @@
             font-size: 60px;
         }
 
+        @include mobile {
+            font-size: 40px;
+        }
+
         span {
             color: #377dff;
         }
@@ -48,6 +61,11 @@
         font-size: 20px;
         line-height: 1.6;
         color: #121212;
+
+        @include mobile {
+            margin-bottom: 16px;
+            font-size: 16px;
+        }
     }
 
     &__link {}

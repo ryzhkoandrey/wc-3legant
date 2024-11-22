@@ -8,12 +8,28 @@
         align-items: center;
     }
 
-    &__logo {}
+    &__logo {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    &__btn-mobile-nav {
+        display: none;
+
+        @include mobile {
+            display: block;
+        }
+    }
 
     &__list {
         display: flex;
         align-items: center;
         gap: 40px;
+
+        @include mobile {
+            display: none;
+        }
     }
 
     &__item {}
@@ -39,6 +55,14 @@
         display: flex;
         align-items: center;
         gap: 5px;
+
+        &--search,
+        &--user {
+
+            @include mobile {
+                display: none;
+            }
+        }
     }
 
     &__btn-count {
