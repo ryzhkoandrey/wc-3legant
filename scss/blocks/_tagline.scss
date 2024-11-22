@@ -16,6 +16,10 @@
         line-height: 1.57143;
         text-align: center;
         color: #fff;
+
+        @include mobile {
+            font-size: 12px;
+        }
     }
 
     &__link {
@@ -29,15 +33,8 @@
         color: var(--tagline-link);
         border-bottom: 1px solid var(--tagline-link);
 
-        &:hover {
-
-            img {
-                transform: rotate(360deg);
-            }
-        }
-
-        img {
-            transition: all .2s;
+        @include mobile {
+            display: none;
         }
     }
 
@@ -45,11 +42,33 @@
         position: absolute;
         top: 10px;
         right: 16px;
+        z-index: 2;
+        width: 20px;
+        height: 20px;
         border-radius: 50%;
-        transition: .2s;
 
         &:hover {
-            background: var(--yellow);
+
+            svg {
+                fill: #fff;
+            }
         }
+
+        svg {
+            fill: #343839;
+            transition: .2s;
+
+            @include mobile {
+                fill: #fff;
+            }
+        }
+    }
+
+    &__link-overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
     }
 }
