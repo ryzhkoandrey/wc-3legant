@@ -5,4 +5,8 @@
     line-height: 1.1;
     letter-spacing: -0.01em;
     color: #000;
+
+    @include mobile {
+        font-size: 34px;
+    }
 }

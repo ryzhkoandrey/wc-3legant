@@ -1,6 +1,5 @@
 .plate {
     position: relative;
-    padding-bottom: 50%;
     background: #f3f5f7 no-repeat center / contain;
 
     &--01 {
@@ -21,6 +20,7 @@
 
     &--03 {
         background-image: url('../img/collections/03.jpg');
+        background-position: center bottom;
 
         @include mediaBg() {
             background-image: url('../img/collections/03@2x.jpg');

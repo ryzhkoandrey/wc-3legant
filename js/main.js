@@ -7,19 +7,26 @@ closeTaglineBtn.onclick = function () {
     tagline.remove();
 };
 
-// ---------- ARRIVALS > SWIPER ----------
+// ---------- ARRIVALS (swiper) ----------
 
 const swiper = new Swiper('.swiper', {
     slidesPerView: 'auto',
-    spaceBetween: 24,
+    spaceBetween: 16,
     freeMode: true,
+
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
     },
+
+    breakpoints: {
+        821: {
+            spaceBetween: 24,
+        }
+    },
 });
 
-// ---------- PROMOTION > TIMER ----------
+// ---------- PROMOTION (timer) ----------
 
 // const endDate = new Date('Nov 22, 2024, 12:00:00');
 

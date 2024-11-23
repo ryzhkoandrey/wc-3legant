@@ -2,6 +2,10 @@
 
 .swiper-slide {
     width: 262px;
+
+    @include mobile {
+        width: 231px;
+    }
 }
 
 // bullets
@@ -20,6 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
     border-radius: 50%;
     background: transparent;
     border: 1px solid transparent;
