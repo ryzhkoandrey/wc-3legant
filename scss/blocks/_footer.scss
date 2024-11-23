@@ -3,26 +3,49 @@
     padding: 80px 0 32px;
     background: #141718;
 
+    @include mobile {
+        padding: 48px 0;
+    }
+
     &__row {
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 15px;
-    }
 
-    &__row--top {
-        margin-bottom: 49px;
-    }
+        @include mobile {
+            flex-direction: column;
+            gap: 40px;
+        }
 
-    &__row--border {
-        padding: 16px 0;
-        border-top: 0.50px solid #6c7275;
+        &--top {
+            margin-bottom: 50px;
+
+            @include mobile {
+                margin-bottom: 40px;
+            }
+        }
+
+        &--border {
+            padding: 16px 0;
+            border-top: 0.50px solid #6c7275;
+
+            @include mobile {
+                padding: 24px 0;
+                gap: 32px;
+            }
+        }
     }
 
     &__title {
         display: flex;
         align-items: center;
         gap: 32px;
+
+        @include mobile {
+            flex-direction: column;
+            gap: 16px;
+        }
     }
 
     &__logo {
@@ -42,6 +65,11 @@
         width: 1px;
         height: 24px;
         background: #6c7275;
+
+        @include mobile {
+            width: 24px;
+            height: 1px;
+        }
     }
 
     &__store {
@@ -55,6 +83,11 @@
         align-items: center;
         gap: 40px;
 
+        @include mobile {
+            flex-direction: column;
+            gap: 32px;
+        }
+
         a {
             font-size: 14px;
             line-height: 1.57143;
@@ -66,6 +99,10 @@
         display: flex;
         align-items: center;
         gap: 28px;
+
+        @include mobile {
+            flex-direction: column-reverse;
+        }
 
         p {
             font-family: var(--font-accent);
@@ -83,9 +120,19 @@
         }
     }
 
+    &__copyrights-links {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+    }
+
     &__socials {
         display: flex;
         align-items: center;
         gap: 24px;
+
+        @include mobile {
+            order: -1;
+        }
     }
 }
