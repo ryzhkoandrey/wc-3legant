@@ -6,9 +6,19 @@
         flex-wrap: wrap;
         gap: 24px;
 
+        @include mobile {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(152px, 1fr));
+            gap: 24px 8px;
+        }
+
         & > * {
             flex: 1;
             min-width: 262px;
+
+            @include mobile {
+                min-width: auto;
+            }
         }
     }
 }

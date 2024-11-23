@@ -2,6 +2,10 @@
     padding: 48px 32px;
     background: #f3f5f7;
 
+    @include mobile {
+        padding: 32px 16px;
+    }
+
     &__img {
         margin-bottom: 16px;
     }
@@ -13,6 +17,12 @@
         font-size: 20px;
         line-height: 1.4;
         color: #141718;
+
+        @include mobile {
+            margin-bottom: 4px;
+            font-family: var(--font-main);
+            font-size: 14px;
+        }
     }
 
     &__desc {
