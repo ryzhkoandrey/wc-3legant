@@ -9,15 +9,26 @@
         background-image: url('../img/newsletter/bg@2x.jpg');
     }
 
+    @include tablet {
+        background: #f2f4f6;
+    }
+
+    @include mobile {
+        padding: 95px 0;
+        height: auto;
+    }
+
     &__content {
         margin: 0 auto;
-        max-width: 488px;
+        padding: 0 var(--container-padding);
+        max-width: 552px;
         flex-grow: 1;
         text-align: center;
     }
 
     &__title {
         margin-bottom: 8px;
+        font-size: 28px;
     }
 
     &__desc {
@@ -25,5 +36,9 @@
         font-size: 18px;
         line-height: 1.66667;
         color: #121212;
+
+        @include mobile {
+            font-size: 14px;
+        }
     }
 }
