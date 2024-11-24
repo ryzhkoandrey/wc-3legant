@@ -1,4 +1,13 @@
-// ---------- MOBILE NAV ----------
+// =============== TAGLINE ===============
+
+const tagline = document.querySelector('.tagline');
+const closeTaglineBtn = document.querySelector('.tagline__close');
+
+closeTaglineBtn.onclick = function () {
+    tagline.remove();
+};
+
+// =============== MOBILE NAV ===============
 
 const navBtn = document.querySelector('#mobile-nav-btn');
 const nav = document.querySelector('.mobile-nav');
@@ -8,16 +17,7 @@ navBtn.onclick = function () {
     document.body.classList.toggle('no-scroll');
 }
 
-// ---------- TAGLINE ----------
-
-const tagline = document.querySelector('.tagline');
-const closeTaglineBtn = document.querySelector('.tagline__close');
-
-closeTaglineBtn.onclick = function () {
-    tagline.remove();
-};
-
-// ---------- ARRIVALS (swiper) ----------
+// =============== ARRIVALS (swiper) ===============
 
 const swiper = new Swiper('.swiper', {
     slidesPerView: 'auto',
@@ -36,7 +36,7 @@ const swiper = new Swiper('.swiper', {
     },
 });
 
-// ---------- PROMOTION (timer) ----------
+// =============== PROMOTION (timer) ===============
 
 // const endDate = new Date('Nov 22, 2024, 12:00:00');
 
