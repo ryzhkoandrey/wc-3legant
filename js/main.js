@@ -1,3 +1,13 @@
+// ---------- MOBILE NAV ----------
+
+const navBtn = document.querySelector('#mobile-nav-btn');
+const nav = document.querySelector('.mobile-nav');
+
+navBtn.onclick = function () {
+    nav.classList.toggle('mobile-nav--open');
+    document.body.classList.toggle('no-scroll');
+}
+
 // ---------- TAGLINE ----------
 
 const tagline = document.querySelector('.tagline');
