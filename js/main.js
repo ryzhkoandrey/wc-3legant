@@ -9,11 +9,18 @@ closeTaglineBtn.onclick = function () {
 
 // =============== MOBILE NAV ===============
 
-const navBtn = document.querySelector('#mobile-nav-btn');
 const nav = document.querySelector('.mobile-nav');
+const navBtn = document.querySelector('#mobile-nav-btn');
+const navFade = document.querySelector('.mobile-nav-fade');
+const closeBtn = document.querySelector('#close-mobile-nav');
 
-navBtn.onclick = function () {
+navBtn.onclick = toggleMobileNav;
+navFade.onclick = toggleMobileNav;
+closeBtn.onclick = toggleMobileNav;
+
+function toggleMobileNav() {
     nav.classList.toggle('mobile-nav--open');
+    navFade.classList.toggle('mobile-nav-fade--active');
     document.body.classList.toggle('no-scroll');
 }
 

@@ -36,7 +36,7 @@
                     <button class="nav__btn-mobile-nav" id="mobile-nav-btn">
                         <img src="img/icons/menu.svg" alt="Navigation">
                     </button>
-                    <a class="logo" href="#">3legant.</a>
+                    <a class="logo" href="#">3legant<span>.</span></a>
                 </div>
 
                 <ul class="nav__list">
@@ -76,13 +76,26 @@
         </div>
     </nav>
 
-    <div class="mobile-nav-fade"></div>
+    <div class="mobile-nav-fade mobile-nav-fade--active"></div>
 
     <div class="mobile-nav mobile-nav--open">
 
-        <div class="mobile-nav__top">top</div>
+        <div class="mobile-nav__top">
+            <div class="mobile-nav__header">
+                <a class="logo" href="#">3legant<span>.</span></a>
+                <button id="close-mobile-nav">
+                    <img src="img/icons/close-nav.svg" alt="close">
+                </button>
+            </div>
+            <div class="mobile-nav__search">search</div>
+            <div class="mobile-nav__nav">nav</div>
+        </div>
 
-        <div class="mobile-nav__bottom">bottom</div>
+        <div class="mobile-nav__bottom">
+            <div class="mobile-nav__links">links</div>
+            <div class="mobile-nav__sign-in">sign-in</div>
+            <div class="mobile-nav__socials">socials</div>
+        </div>
 
     </div>
 
