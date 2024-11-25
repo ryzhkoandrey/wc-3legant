@@ -56,22 +56,41 @@
 		}
 	}
 
-	&__nav {}
-
 	&__list {}
 
-	&__item {}
+	&__item {
+		padding: 16px 0;
+		border-bottom: 1px solid #e8ecef;
+
+		&--gray {
+			padding: 8px 0;
+		}
+	}
 
 	&__link {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 16px;
 		font-weight: 500;
 		font-size: 14px;
 		line-height: 1.71429;
 		color: #141718;
+
+		&--gray {
+			font-size: 18px;
+			color: #6c7275;
+		}
 	}
 
 	&__links {}
 
 	&__sign-in {}
 
-	&__socials {}
+	&__socials {
+		display: flex;
+		align-items: center;
+		gap: 24px;
+	}
 }

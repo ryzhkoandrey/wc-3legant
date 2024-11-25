@@ -76,9 +76,9 @@
         </div>
     </nav>
 
-    <div class="mobile-nav-fade mobile-nav-fade--active"></div>
+    <div class="mobile-nav-fade"></div>
 
-    <div class="mobile-nav mobile-nav--open">
+    <div class="mobile-nav">
 
         <div class="mobile-nav__top">
 
@@ -93,35 +93,70 @@
                 <input class="mobile-nav__search-input" type="text" placeholder="Search">
             </form>
 
-            <div class="mobile-nav__nav">
-                <ul class="mobile-nav__list">
-                    <li class="mobile-nav__item">
-                        <a class="mobile-nav__link" href="#">Home</a>
-                    </li>
-                    <li class="mobile-nav__item">
-                        <button class="mobile-nav__link">
-                            Shop
-                            <img src="img/icons/chevron-down.svg" alt="arrow">
-                        </button>
-                    </li>
-                    <li class="mobile-nav__item">
-                        <button class="mobile-nav__link">
-                            Product
-                            <img src="img/icons/chevron-down.svg" alt="arrow">
-                        </button>
-                    </li>
-                    <li class="mobile-nav__item">
-                        <a class="mobile-nav__link" href="#">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
+            <ul class="mobile-nav__list">
+                <li class="mobile-nav__item">
+                    <a class="mobile-nav__link" href="#">Home</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <button class="mobile-nav__link">
+                        Shop
+                        <img src="img/icons/chevron-down.svg" alt="arrow">
+                    </button>
+                </li>
+                <li class="mobile-nav__item">
+                    <button class="mobile-nav__link">
+                        Product
+                        <img src="img/icons/chevron-down.svg" alt="arrow">
+                    </button>
+                </li>
+                <li class="mobile-nav__item">
+                    <a class="mobile-nav__link" href="#">Contact Us</a>
+                </li>
+            </ul>
 
         </div>
 
         <div class="mobile-nav__bottom">
-            <div class="mobile-nav__links">links</div>
-            <div class="mobile-nav__sign-in">sign-in</div>
-            <div class="mobile-nav__socials">socials</div>
+
+            <div class="mobile-nav__links">
+                <ul class="mobile-nav__list">
+                    <li class="mobile-nav__item mobile-nav__item--gray">
+                        <a class="mobile-nav__link mobile-nav__link--gray" href="#">
+                            Cart
+                            <span class="nav__btn">
+                                <img src="img/icons/cart.svg" alt="cart">
+                                <span class="nav__btn-count nav__btn-count--white">2</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="mobile-nav__item mobile-nav__item--gray">
+                        <a class="mobile-nav__link mobile-nav__link--gray" href="#">
+                            Whishlist
+                            <span class="nav__btn">
+                                <img src="img/icons/heart.svg" alt="heart">
+                                <span class="nav__btn-count nav__btn-count--white">2</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mobile-nav__sign-in">
+                <a class="btn btn--wide" href="#">Sign In</a>
+            </div>
+
+            <div class="mobile-nav__socials">
+                <a href="#">
+                    <img src="img/socials-black/instagram.svg" alt="instagram">
+                </a>
+                <a href="#">
+                    <img src="img/socials-black/facebook.svg" alt="facebook">
+                </a>
+                <a href="#">
+                    <img src="img/socials-black/youtube.svg" alt="youtube">
+                </a>
+            </div>
+
         </div>
 
     </div>

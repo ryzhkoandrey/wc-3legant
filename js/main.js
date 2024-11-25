@@ -45,8 +45,6 @@ const swiper = new Swiper('.swiper', {
 
 // =============== PROMOTION (timer) ===============
 
-// const endDate = new Date('Nov 22, 2024, 12:00:00');
-
 const endDate = new Date();
 endDate.setDate(endDate.getDate() + 3);
 
