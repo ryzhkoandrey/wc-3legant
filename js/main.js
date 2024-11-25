@@ -10,13 +10,13 @@ closeTaglineBtn.onclick = function () {
 // =============== MOBILE NAV ===============
 
 const nav = document.querySelector('.mobile-nav');
-const navBtn = document.querySelector('#mobile-nav-btn');
 const navFade = document.querySelector('.mobile-nav-fade');
-const closeBtn = document.querySelector('#close-mobile-nav');
+const navBtnOpen = document.querySelector('#mobile-nav-btn');
+const navBtnClose = document.querySelector('#close-mobile-nav');
 
-navBtn.onclick = toggleMobileNav;
+navBtnOpen.onclick = toggleMobileNav;
+navBtnClose.onclick = toggleMobileNav;
 navFade.onclick = toggleMobileNav;
-closeBtn.onclick = toggleMobileNav;
 
 function toggleMobileNav() {
     nav.classList.toggle('mobile-nav--open');

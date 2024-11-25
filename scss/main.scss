@@ -6,6 +6,11 @@
 @import 'global/reset';
 @import 'global/base';
 
+// libs
+
+@import '../libs/swiper/swiper-bundle.min.css';
+@import '../libs/swiper/swiper-bundle--override';
+
 // blocks
 
 @import 'blocks/none';
@@ -35,8 +40,3 @@
 @import 'blocks/values';
 @import 'blocks/newsletter';
 @import 'blocks/footer';
-
-// libs
-
-@import '../libs/swiper/swiper-bundle.min.css';
-@import '../libs/swiper/swiper-bundle--override';
